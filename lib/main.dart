@@ -29,12 +29,11 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: ListView.builder(
-        itemBuilder: (context, index) {
-          return null;
-        },
-      ),
-    );
+        appBar: AppBar(
+          title: const Text('Página de cadastro'),
+        ),
+        body: Column(
+          children: const [],
+        ));
   }
 }
