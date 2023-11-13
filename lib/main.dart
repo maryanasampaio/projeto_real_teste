@@ -10,8 +10,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: const Color.fromARGB(255, 44, 87, 121),
+        primaryColor: const Color.fromARGB(255, 72, 112, 141),
       ),
       home: const MyHomePage(),
     );
@@ -30,7 +31,15 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Página de cadastro'),
+          backgroundColor: Theme.of(context).primaryColor,
+          title: const Center(
+            child: Text(
+              'Página de cadastro',
+              style: TextStyle(
+                fontSize: 17,
+              ),
+            ),
+          ),
         ),
         body: Column(
           children: const [],
