@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_real_app/componentes/CamposWidget.dart';
+import 'package:projeto_real_app/componentes/camposWidget.dart';
+import 'package:projeto_real_app/componentes/botao.dart';
 
 void main() {
   runApp(const MyApp());
@@ -45,6 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         children: const [
           CamposDeRegistro(),
+          Botao(),
         ],
       ),
     );
